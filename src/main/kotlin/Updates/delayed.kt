@@ -1,3 +1,3 @@
 package Updates
 
-class delayed: UpdateStrategy()
+class delayed: ShippingUpdate()

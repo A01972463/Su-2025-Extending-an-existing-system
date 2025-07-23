@@ -1,3 +1,3 @@
 package Updates
 
-class created: UpdateStrategy()
+class created: ShippingUpdate()

@@ -1,3 +1,3 @@
 package Updates
 
-class delivered: UpdateStrategy()
+class delivered: ShippingUpdate()
