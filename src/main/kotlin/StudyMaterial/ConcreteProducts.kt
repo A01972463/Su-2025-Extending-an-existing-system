@@ -1,3 +1,5 @@
+package StudyMaterial
+
 class ConcreteProductA1: AbstractProduct()
 class ConcreteProductA2: AbstractProduct()
 class ConcreteProductA3: AbstractProduct()

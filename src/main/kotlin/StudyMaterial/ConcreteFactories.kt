@@ -1,3 +1,5 @@
+package StudyMaterial
+
 class ConcreteFactory1: AbstractFactory() {
     override fun overrideMethod(type: String): AbstractProduct {
         return when (type) {

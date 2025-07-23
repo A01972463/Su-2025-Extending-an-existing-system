@@ -1,3 +1,5 @@
+package StudyMaterial
+
 abstract class AbstractFactory {
     fun commonFactoryMethod(): String {
         val statement = "Abstract method call from Abstract Factory."
