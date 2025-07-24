@@ -1,4 +1,6 @@
 package Shipments
 
-abstract class AbstractShipment {
+import SubjectShipment
+
+abstract class AbstractShipment: SubjectShipment() {
 }
