@@ -1,5 +1,5 @@
 interface Subject<T> {
-    fun registerObserver(observerTracker: T) {}
-    fun removeObserver(observerTracker: T) {}
+    fun registerObserver(observer: T) {}
+    fun removeObserver(observer: T) {}
     fun notifyObservers(){}
 }

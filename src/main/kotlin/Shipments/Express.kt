@@ -1,4 +1,4 @@
 package Shipments
 
-class Express: Abstract {
+class Express: AbstractShipment {
 }

@@ -1,4 +1,4 @@
 package Shipments
 
-class Overnight: Abstract {
+class Overnight: AbstractShipment {
 }
