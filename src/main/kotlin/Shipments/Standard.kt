@@ -1,4 +1,4 @@
 package Shipments
 
-class Standard: Abstract() {
+class Standard: Abstract {
 }

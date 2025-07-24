@@ -1,3 +1,3 @@
 package Updates
 
-class lost: ShippingUpdate()
+class lost: ShippingUpdate

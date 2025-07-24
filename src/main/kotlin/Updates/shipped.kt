@@ -1,3 +1,3 @@
 package Updates
 
-class shipped: ShippingUpdate()
+class shipped: ShippingUpdate

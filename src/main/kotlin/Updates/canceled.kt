@@ -1,3 +1,3 @@
 package Updates
 
-class canceled: ShippingUpdate()
+class canceled: ShippingUpdate

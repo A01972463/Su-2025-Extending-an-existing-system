@@ -1,4 +1,4 @@
 package Shipments
 
-class Bulk: Abstract() {
+class Bulk: Abstract {
 }

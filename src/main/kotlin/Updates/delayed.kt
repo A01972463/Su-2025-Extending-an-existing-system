@@ -1,3 +1,3 @@
 package Updates
 
-class delayed: ShippingUpdate()
+class delayed: ShippingUpdate

@@ -1,3 +1,3 @@
 package Updates
 
-class created: ShippingUpdate()
+class created: ShippingUpdate

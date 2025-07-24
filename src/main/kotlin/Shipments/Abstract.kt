@@ -2,5 +2,5 @@ package Shipments
 
 import Observer
 
-abstract class Abstract : Observer {
+interface Abstract : Observer {
 }

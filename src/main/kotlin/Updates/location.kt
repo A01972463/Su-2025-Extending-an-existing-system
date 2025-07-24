@@ -1,3 +1,3 @@
 package Updates
 
-class location: ShippingUpdate()
+class location: ShippingUpdate
