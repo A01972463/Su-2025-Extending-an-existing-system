@@ -1,3 +1,3 @@
 interface Observer {
-    fun update() {}
+    abstract fun update()
 }
