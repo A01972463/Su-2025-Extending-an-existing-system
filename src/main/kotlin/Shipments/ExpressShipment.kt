@@ -1,4 +1,8 @@
 package Shipments
 
-class ExpressShipment: AbstractShipment {
+class ExpressShipment: AbstractShipment() {
+
+    override fun toString(): String {
+        return "Express"
+    }
 }

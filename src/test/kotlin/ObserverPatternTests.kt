@@ -1,15 +1,18 @@
 import Shipments.AbstractShipment
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.Assertions.assertEquals
 
 class ObserverPatternTests {
     @Test
     fun testInit(){
         val server = TrackingServer
         val shipmentTypes = arrayOf("Standard", "Overnight", "Express", "Bulk", "Error")
-        val shipment = AbstractShipment.create
-        server.registerObserver(observer = )
+
         shipmentTypes.forEach {
-            server.registerObserver(AbstractShipment.createShipment(it))
+            var shipment = AbstractShipment.createShipment(it)
+            server.registerObserver(shipment)
+            println(server.toString())
+            println(shipment.toString())
         }
     }
 }

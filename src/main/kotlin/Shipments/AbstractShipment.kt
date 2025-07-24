@@ -2,18 +2,17 @@ package Shipments
 
 import Observer
 
-interface AbstractShipment: Observer {
-    override fun update() {
-        TODO("Implement Update")
-    }
+abstract class AbstractShipment: Observer {
 
-    fun createShipment(type: String): AbstractShipment {
-        return when (type) {
-            "Standard" -> StandardShipment()
-            "Overnight" -> OvernightShipment()
-            "Express" -> ExpressShipment()
-            "Bulk" -> BulkShipment()
-            else -> NullShipment()
+    companion object {
+        fun createShipment(type: String): AbstractShipment {
+            return when (type) {
+                "Standard" -> StandardShipment()
+                "Overnight" -> OvernightShipment()
+                "Express" -> ExpressShipment()
+                "Bulk" -> BulkShipment()
+                else -> NullShipment()
+            }
         }
     }
 }

@@ -1,4 +1,8 @@
 package Shipments
 
-class NullShipment: AbstractShipment {
+class NullShipment: AbstractShipment() {
+
+    override fun toString(): String {
+        return "Null"
+    }
 }

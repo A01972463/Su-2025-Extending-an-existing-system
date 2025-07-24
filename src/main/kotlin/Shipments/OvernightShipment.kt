@@ -1,4 +1,8 @@
 package Shipments
 
-class OvernightShipment: AbstractShipment {
+class OvernightShipment: AbstractShipment() {
+
+    override fun toString(): String {
+        return "Overnight"
+    }
 }

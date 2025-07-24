@@ -12,4 +12,8 @@ object TrackingServer: Subject<Observer> {
     override fun notifyObservers() {
         shipments.forEach { it.update() }
     }
+
+    fun createShipment() {
+
+    }
 }

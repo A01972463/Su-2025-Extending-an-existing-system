@@ -1,4 +1,8 @@
 package Shipments
 
-class BulkShipment: AbstractShipment {
+class BulkShipment: AbstractShipment() {
+
+    override fun toString(): String {
+        return "Bulk"
+    }
 }
