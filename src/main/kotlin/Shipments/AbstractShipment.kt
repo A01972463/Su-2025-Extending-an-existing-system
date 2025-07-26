@@ -14,4 +14,8 @@ abstract class AbstractShipment: Observer {
             }
         }
     }
+
+    override fun update() {
+        TODO("Not yet implemented")
+    }
 }
