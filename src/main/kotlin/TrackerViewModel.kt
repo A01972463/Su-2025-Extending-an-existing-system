@@ -10,6 +10,8 @@ object TrackerViewModel: Subject<Observer> {
     }
 
     override fun notifyObservers() {
-        TODO("Not yet implemented")
+        shipments.forEach {
+            it.update()
+        }
     }
 }

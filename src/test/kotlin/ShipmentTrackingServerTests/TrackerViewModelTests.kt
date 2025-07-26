@@ -23,8 +23,20 @@ class TrackerViewModelTests {
         assertEquals(0, server.shipments.size)
     }
 
-//    @Test
-//    fun testSubjectNotify() {
-//        TODO()
-//    }
+    @Test
+    fun testSubjectNotify() {
+        val server = TrackerViewModel
+        val shipmentTypes = arrayOf("Standard", "Overnight", "Express", "Bulk")
+
+        shipmentTypes.forEach {
+            val shipment = AbstractShipment.createShipment(it)
+            server.registerObserver(shipment)
+        }
+
+        server.notifyObservers()
+
+        server.shipments.forEach {
+            assertEquals("Update", it.toString())
+        }
+    }
 }
