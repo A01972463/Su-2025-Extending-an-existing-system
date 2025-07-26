@@ -2,11 +2,11 @@ object TrackerViewModel: Subject<Observer> {
     val shipments = mutableListOf<Observer>()
 
     override fun registerObserver(observer: Observer) {
-        TODO("Not yet implemented")
+        shipments.add(observer)
     }
 
     override fun removeObserver(observer: Observer) {
-        TODO("Not yet implemented")
+        shipments.remove(observer)
     }
 
     override fun notifyObservers() {
