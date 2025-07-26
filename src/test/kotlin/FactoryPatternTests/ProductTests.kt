@@ -1,0 +1,4 @@
+package FactoryPatternTests
+
+class ProductTests {
+}

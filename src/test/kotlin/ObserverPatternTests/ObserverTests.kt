@@ -2,19 +2,10 @@ import Shipments.AbstractShipment
 import org.junit.jupiter.api.*
 import org.junit.jupiter.api.Assertions.assertEquals
 
-class TrackerTests {
+class ObserverTests {
     @Test
-    fun testSubjectMethods(){
-        val server = TrackingServer
-        val shipment = AbstractShipment.createShipment("Standard")
-
-        server.registerObserver(shipment)
-        assertEquals("Standard", server.shipments[0].toString())
-    }
-
-    @Test
-    fun testObserverInit() {
-        val server = TrackingServer
+    fun testCreateShipment() {
+        val server = TrackerViewModel
         val shipmentTypes = arrayOf("Standard", "Overnight", "Express", "Bulk")
 
         shipmentTypes.forEach {
@@ -25,5 +16,10 @@ class TrackerTests {
 
         val shipment = AbstractShipment.createShipment("Error")
         assertEquals("Null", shipment.toString())
+    }
+
+    @Test
+    fun testShipmentUpdate() {
+        TODO()
     }
 }

@@ -1,0 +1,4 @@
+package ShipmentTrackingServerTests
+
+class TrackerViewModelTests {
+}

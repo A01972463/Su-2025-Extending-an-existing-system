@@ -1,9 +1,37 @@
 package StudyMaterial
 
-class ConcreteProductA1: AbstractProduct()
-class ConcreteProductA2: AbstractProduct()
-class ConcreteProductA3: AbstractProduct()
-class ConcreteProductB1: AbstractProduct()
-class ConcreteProductB2: AbstractProduct()
-class ConcreteProductB3: AbstractProduct()
-class NullProduct: AbstractProduct()
+class ConcreteProductA1: AbstractProduct() {
+    override fun toString(): String {
+        return "A1"
+    }
+}
+class ConcreteProductA2: AbstractProduct() {
+    override fun toString(): String {
+        return "A2"
+    }
+}
+class ConcreteProductA3: AbstractProduct() {
+    override fun toString(): String {
+        return "A3"
+    }
+}
+class ConcreteProductB1: AbstractProduct() {
+    override fun toString(): String {
+        return "B1"
+    }
+}
+class ConcreteProductB2: AbstractProduct() {
+    override fun toString(): String {
+        return "B2"
+    }
+}
+class ConcreteProductB3: AbstractProduct() {
+    override fun toString(): String {
+        return "B3"
+    }
+}
+class NullProduct: AbstractProduct() {
+    override fun toString(): String {
+        return "Null"
+    }
+}
